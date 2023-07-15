@@ -7,5 +7,5 @@ and **quick training**.
 Currently supported activation functions are ReLU, any ReLU-like function, tanh, and linear. Support for swish and gelu
 is underway. The network architecture is, for now, limited to a fully-connected feed-forward network with residual connections.
 
-# Usage
+## Usage
 
