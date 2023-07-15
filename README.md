@@ -28,7 +28,7 @@ A more advanced example:
 ```
 from crit_mlp import CritMLP
 
-model = CritMLP(in_dim=input_size, out_dim=output_size,
+model = CritMLP(in_dim=14, out_dim=3,
                     depth=20, af='relu-like', neg_slope=0.2, pos_slope=0.5)
 
 ```
