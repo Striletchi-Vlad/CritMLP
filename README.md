@@ -19,7 +19,7 @@ from crit_mlp import CritMLP
 model = CritMLP(in_dim, out_dim, depth, 'relu')
 
 ```
-You can then use the CritMLP as you would any other nn.Module in Pytorch.  
+You can then use the CritMLP just as you would any other nn.Module in Pytorch.  
 
 A more advanced example:
 
