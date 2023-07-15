@@ -64,11 +64,12 @@ class CritMLP(nn.Module):
             Cb, CW = distribution_hyperparameters(
                 self.gamma, af, neg_slope, pos_slope)
             if isinstance(m, nn.Linear):
-                nn.init.normal_(m.weight, mean=0, std=np.sqrt(CW/width))
-                nn.init.normal_(m.bias, mean=0, std=np.sqrt(Cb))
+                # nn.init.normal_(m.weight, mean=0, std=np.sqrt(CW/width))
+                # nn.init.normal_(m.bias, mean=0, std=np.sqrt(Cb))
+                nn.init.kaiming_normal(m.weight)
 
         self.seq = nn.Sequential(*layers)
-        # self.seq.apply(init_weights)
+        self.seq.apply(init_weights)
 
     def forward(self, x):
         for i in range(len(self.seq)):
