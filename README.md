@@ -31,4 +31,12 @@ model = CritMLP(in_dim=input_size, out_dim=output_size,
 
 ```
 This will build NN taking inputs of size 14, with an output of size 3 and depth of 10 layers,
-with a relu-like activation function with negative slope of 0.2 and positive slope of 0.5
+with a relu-like activation function with negative slope of 0.2 and positive slope of 0.5.
+
+## Performance Comparison
+For a quick test, a network with 20 layers, relu activation function is trained on the scipy wine dataset, for 400 epochs.
+Here is how the CritMLP performs against a feed-forward NN with default initialization and one initialized with kaiming normal init (best from pytorch built-ins):
+
+### Gradient norm
+Default initialization:
+<img src="/assets/no_init_grad_norm.png" alt="no_init" style="height: 200px; width:300px;"/>
