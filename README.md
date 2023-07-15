@@ -39,4 +39,4 @@ Here is how the CritMLP performs against a feed-forward NN with default initiali
 
 ### Gradient norm
 #### Default initialization:
-<img src="/assets/no_init_grad_norm.png" alt="no_init" style="height: 200px; width:300px;"/>
+<img src="/assets/no_init_grad_norm.png" alt="no_init" style="height: 400px; width:600px;"/>
