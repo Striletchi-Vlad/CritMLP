@@ -1,5 +1,5 @@
 # CritMLP
-### Get a critically tuned NN specifying only the desired depth(or width) and activation function!  
+### Get a critically tuned NN by specifying only the desired depth(or width) and activation function!  
 
 This project is an aplication of the theoretical concepts discussed in [Deep Learning Theory](https://deeplearningtheory.com/).
 
