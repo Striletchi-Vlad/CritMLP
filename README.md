@@ -32,7 +32,7 @@ model = CritMLP(in_dim=14, out_dim=3,
                     depth=20, af='relu-like', neg_slope=0.2, pos_slope=0.5)
 
 ```
-This will build NN taking inputs of size 14, with an output of size 3 and depth of 10 layers,
+This will build NN taking inputs of size 14, with an output of size 3 and depth of 20 layers,
 with a relu-like activation function with negative slope of 0.2 and positive slope of 0.5.
 
 ## Performance Comparison
