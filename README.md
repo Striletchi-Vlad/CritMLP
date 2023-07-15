@@ -37,6 +37,26 @@ with a relu-like activation function with negative slope of 0.2 and positive slo
 For a quick test, a network with 20 layers, ReLU activation function is trained on the scipy wine dataset, for 400 epochs.
 Here is how the CritMLP performs against a feed-forward NN with default initialization and one initialized with kaiming normal init (best from pytorch built-ins):
 
+### Accuracy
+#### Default initialization:
+<img src="/assets/no_init_acc.png" alt="default" style="height: 500px; width:600px;"/>
+
+#### Kaiming normal initialization:
+<img src="/assets/kaiming_normal_acc.png" alt="kaiming_normal" style="height: 500px; width:600px;"/>
+
+#### Critical initialization (CritMLP):
+<img src="/assets/crit_init_acc.png" alt="critical" style="height: 500px; width:600px;"/>
+
+### Loss
+#### Default initialization:
+<img src="/assets/no_init_grad_norm.png" alt="default" style="height: 500px; width:600px;"/>
+
+#### Kaiming normal initialization:
+<img src="/assets/kaiming_normal_grad_norm.png" alt="kaiming_normal" style="height: 500px; width:600px;"/>
+
+#### Critical initialization (CritMLP):
+<img src="/assets/crit_init_grad_norm.png" alt="critical" style="height: 500px; width:600px;"/>
+
 ### Gradient norm
 #### Default initialization:
 <img src="/assets/no_init_grad_norm.png" alt="default" style="height: 500px; width:600px;"/>
