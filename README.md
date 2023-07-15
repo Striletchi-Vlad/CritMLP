@@ -38,5 +38,5 @@ For a quick test, a network with 20 layers, relu activation function is trained 
 Here is how the CritMLP performs against a feed-forward NN with default initialization and one initialized with kaiming normal init (best from pytorch built-ins):
 
 ### Gradient norm
-Default initialization:
+#### Default initialization:
 <img src="/assets/no_init_grad_norm.png" alt="no_init" style="height: 200px; width:300px;"/>
