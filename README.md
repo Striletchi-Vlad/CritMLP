@@ -6,6 +6,9 @@ This project is an aplication of the theoretical concepts discussed in [Deep Lea
 The network is __automatically built__ in the best way possible regarding the depth/width ratio,
 initialization distribution and residual connections to ensure **high performance**, **stability**
 and **quick training**.  
+
+This is a side effect of **criticality**, a state describing a neural network with an output distribution as close as possible to **a Gaussian distribution with variance = 1.**. By enforcing certain design principles upon the network to make this possible, the process of learning is greatly improved.
+
 Currently supported activation functions are ReLU, any ReLU-like function, tanh, and linear. Support for swish and gelu
 is underway. The network architecture is, for now, limited to a fully-connected feed-forward network with residual connections.
 
