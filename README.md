@@ -8,6 +8,10 @@ Currently supported activation functions are ReLU, any ReLU-like function, tanh,
 is underway. The network architecture is, for now, limited to a fully-connected feed-forward network with residual connections.
 
 ## Usage
+For a quick demo, clone the repository and run
+```
+python demo.py
+```
 Clone the repository or manually download crit_functions.py and crit_mlp.py. Afterwards, just import CritMLP and instantiate it as such:
 ```
 from crit_mlp import CritMLP
