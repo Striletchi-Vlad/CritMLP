@@ -68,7 +68,7 @@ class CritMLP(nn.Module):
                 nn.init.normal_(m.bias, mean=0, std=np.sqrt(Cb))
 
         self.seq = nn.Sequential(*layers)
-        self.seq.apply(init_weights)
+        # self.seq.apply(init_weights)
 
     def forward(self, x):
         for i in range(len(self.seq)):
