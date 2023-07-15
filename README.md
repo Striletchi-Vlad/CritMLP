@@ -39,4 +39,10 @@ Here is how the CritMLP performs against a feed-forward NN with default initiali
 
 ### Gradient norm
 #### Default initialization:
-<img src="/assets/no_init_grad_norm.png" alt="no_init" style="height: 500px; width:600px;"/>
+<img src="/assets/no_init_grad_norm.png" alt="default" style="height: 500px; width:600px;"/>
+
+#### Kaiming normal initialization:
+<img src="/assets/kaiming_normal_grad_norm.png" alt="kaiming_normal" style="height: 500px; width:600px;"/>
+
+#### Critical initialization (CritMLP):
+<img src="/assets/crit_init_grad_norm.png" alt="critical" style="height: 500px; width:600px;"/>
