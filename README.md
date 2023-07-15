@@ -1,7 +1,7 @@
 # CritMLP
 ### Get a critically tuned NN specifying only the desired depth(or width) and activation function!  
 
-This project is an aplication of the theoretical concepts discussed in the Deep Learning Theory Book[https://deeplearningtheory.com/].
+This project is an aplication of the theoretical concepts discussed in the [Deep Learning Theory](https://deeplearningtheory.com/).
 
 The network is __automatically built__ in the best way possible regarding the depth/width ratio,
 initialization distribution and residual connections to ensure **high performance**, **stability**
