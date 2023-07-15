@@ -8,16 +8,20 @@ Currently supported activation functions are ReLU, any ReLU-like function, tanh,
 is underway. The network architecture is, for now, limited to a fully-connected feed-forward network with residual connections.
 
 ## Usage
-Clone the repository or manually download crit_functions.py and crit_mlp.py. Afterwards, just instantiate a CritMLP as such:
+Clone the repository or manually download crit_functions.py and crit_mlp.py. Afterwards, just import CritMLP and instantiate it as such:
 ```
-    model = CritMLP(in_dim, out_dim, depth, 'relu')
+from crit_mlp import CritMLP
+
+model = CritMLP(in_dim, out_dim, depth, 'relu')
 
 ```
 You can then use the CritMLP as you would any other nn.Module in Pytorch.
 A more advanced example:
 
 ```
-    model = CritMLP(in_dim=input_size, out_dim=output_size,
+from crit_mlp import CritMLP
+
+model = CritMLP(in_dim=input_size, out_dim=output_size,
                     depth=20, af='relu-like', neg_slope=0.2, pos_slope=0.5)
 
 ```
